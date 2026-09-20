@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta name="theme-color" content="#2f261f">
+  <title>Family Recordings</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <header class="album-header">
+      <div class="album-art" aria-hidden="true">
+        <span class="album-art__line"></span>
+        <span class="album-art__center">♪</span>
+      </div>
+      <div>
+        <p class="overline">A family archive</p>
+        <h1>Family Recordings</h1>
+        <p class="subtitle">Voice and nylon-string guitar</p>
+      </div>
+    </header>
+
+    <section class="player" aria-label="Music player">
+      <div class="now-playing">
+        <span id="current-number">01</span>
+        <div>
+          <p>Now playing</p>
+          <h2 id="current-title">Track 01</h2>
+        </div>
+      </div>
+      <audio id="audio-player" controls preload="metadata" playsinline src="audio/track-01.mp3"></audio>
+    </section>
+
+    <ol id="playlist" class="playlist" aria-label="Track list"></ol>
+  </main>
+
+  <footer>Family archive · 16 recordings</footer>
+  <script src="app.js"></script>
+</body>
+</html>
